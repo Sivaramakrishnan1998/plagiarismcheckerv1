@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Google Analytics script start -->
+  <!-- <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-78952927-1', 'auto');
+    ga('send', 'pageview');
+  </script> -->
+  <!-- Google Analytics script end -->
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Chronicle Scan</title>
+  {% load staticfiles %}
+  <link rel="stylesheet" type="text/css" href="{% static 'vendor/animate/animate.css' %}">
+    	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="/static/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href='https://fonts.googleapis.com/css?family=Amaranth:700italic' rel='stylesheet' type='text/css'>
+
+    <script>
+               var myvar;
+           function spin()
+
+               {
+                 document.getElementById("hi").style.display="none";
+                 document.getElementById("loader").style.display="block";
+
+                   myvar = setTimeout(showPage,30000)
+               }
+               function showPage()
+               {
+                   document.getElementById("loader").style.display="none";
+                   document.getElementById("hi").style.display="block";
+               }
+
+
+
+           </script>
+
+
+
+
+
+
+                   <style>
+
+
+           #loader
+                       {
+                         display: none;
+                         margin:auto;
+                         margin-top: 250px;
+                           height: 100px;
+                           width: 100px;
+
+                           background-color: blue;
+                           border-radius: 100%;
+                           -webkit-animation:spin 2s linear infinite;
+                       }
+                       @-webkit-keyframes spin
+                       {
+                           0%
+                           {
+                             background-radius:90%;
+                               background-color: aqua;
+                           }
+                           25%
+                           {
+                            border-radius: 70%;
+
+                               background-color: red;
+                           }
+                           50%
+                           {
+                             border-radius: 40%;
+                               background-color: darkblue;
+                           }
+                           75%
+                           {  border-radius: 10%;
+                               background-color: darkorange;
+                           }
+
+                           100%
+                           {
+                               background-color: dimgray;
+                           }
+                       }
+
+
+
+                       #hi
+                       {
+                         display: block;
+                       }
+
+                       #b{
+                        display:inline-block;
+                       }
+                       a{
+                        color:white;
+                       }
+                   </style>
+
+</head>
+
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="/" class="brand-logo" style="font-family: 'Amaranth', sans-serif;font-size:300%;color:green;"><i class="material-icons" style="float:left;">code</i>&nbspCrossCheck</a>
+      <ul class="right hide-on-med-and-down">
+        <!-- <li><a  style="color:black;" href="/">Home</a></li> -->
+        <!-- <li><a href="/test/">Languages</a></li> -->
+          <!-- <ul id='dropdown1' class='dropdown-content'>
+            <li><a href="#!">C</a></li>
+            <li><a href="#!">Java</a></li>
+            <li class="divider"></li>
+            <li><a href="#!">Php</a></li>
+          </ul> -->
+          <!-- <li><a href="/forums">Forum</a></li> -->
+        <!-- <li><a style="color:black;" href="/contact">Contact Us</a></li> -->
+        {% if user.is_authenticated %}
+       <!--  <li><a class="dropdown-button" style="color:black;" data-beloworigin="true" data-activates="dropdown1">Welcome {{user.username}} ▼</a></li> -->
+          <!-- <ul id='dropdown1' class='dropdown-content'> -->
+            <ul>
+
+            
+            <li><a style="color:black;" href="/dashboard">Dashboard</a></li>
+            <!-- <li><a style="color:black;" href="/dashboard">Settings</a></li> -->
+            <li><a style="color:black;" href="/logout">Logout</a></li>
+          </ul>
+        {% else %}
+       <!--  <li><a class="dropdown-button" style="color:black;" data-beloworigin="true" data-activates="dropdown1">Welcome Guest ▼</a></li> -->
+        <!-- <ul  id='dropdown1' class='dropdown-content'> -->
+          <ul>
+
+
+
+          <li><a style="color:black;" href="/login">Login</a></li>
+          <li><a style="color:black;" href="/register">Register</a></li>
+
+        </ul>
+
+        {% endif %}
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a style="color:black;" href="/">Home</a></li>
+        <!-- <li><a href="/test/">Languages</a></li>
+        <li><a href="/forums">Forum</a></li> -->
+        <li><a style="color:black;" href="/contact">Contact Us</a></li>
+        {% if user.is_authenticated %}
+        <li><a style="color:black;" class="dropdown-button" data-beloworigin="true" data-activates="dropdown2">Welcome {{user.username}} ▼</a></li>
+          <ul id='dropdown2' class='dropdown-content'>
+
+            <li><a style="color:black;" href="/logout">Logout</a></li>
+          </ul>
+        {% else %}
+        <li><a style="color:black;" href="/login">Register/Login</a></li>
+        {% endif %}
+
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+ {% block body %}
+  {% endblock %}
+
+<!-- 
+<footer class="page-footer white">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="black-text">Company Bio</h5>
+          <p class="black-text text-lighten-4">We are a team of college students working on this project like it's our full time job.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="black-text">Connect</h5>
+          <ul>
+            <li><a class="black-text" href="/">Home</a></li>
+            <li><a class="black-text" href="/contact">Contact Us</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer> -->
+
+
+  <!--  Scripts-->
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/materialize.js"></script>
+  <script src="static/js/init.js"></script>
+  <!--Start of Tawk.to Script-->
+
+  <!--End of Tawk.to Script-->
+
+  </body>
+</html>

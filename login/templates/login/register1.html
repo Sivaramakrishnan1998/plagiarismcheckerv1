@@ -1,0 +1,214 @@
+{% load staticfiles%}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Login &amp; Register Templates</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,500">
+        <link rel="stylesheet" href="{% static 'login/assets/bootstrap/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'login/assets/font-awesome/css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'login/assets/css/form-elements.css' %}">
+        <link rel="stylesheet" href="{% static 'login/assets/css/style.css' %}">
+
+        <link rel="shortcut icon" type="image/png" href="{% static '/newtemplate/assets/images/fevicon.png' %}">
+    
+    
+    <link rel="stylesheet" href="{% static '/newtemplate/assets/css/bootstrap-glyphicons.css' %}">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static '/newtemplate/assets/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static '/newtemplate/assets/css/owl.carousel.css' %}">
+    <link rel="stylesheet" href="{% static '/newtemplate/assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static '/newtemplate/assets/css/chat.css' %}">
+    <link rel="stylesheet" href="{% static '/newtemplate/assets/css/slicknav.min.css' %}">
+    <link rel="stylesheet" href="{% static '/newtemplate/assets/css/bootstrap-datepicker.min.css' %}">
+    <link rel="stylesheet" href="{% static '/newtemplate/style.css' %}">
+    <link rel="stylesheet" href="{% static '/newtemplate/assets/css/responsive.css' %}">
+    <script src="{% static '/newtemplate/assets/js/jquery-2.1.3.min.js' %}"></script>
+
+
+
+        <link rel="shortcut icon" href="{% static 'login/assets/ico/favicon.png' %}">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'login/assets/ico/apple-touch-icon-144-precomposed.png' %}">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'login/assets/ico/apple-touch-icon-114-precomposed.png' %}">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'login/assets/ico/apple-touch-icon-72-precomposed.png' %}">
+        <link rel="apple-touch-icon-precomposed" href="{% static 'login/assets/ico/apple-touch-icon-57-precomposed.png' %}">
+
+    </head>
+
+    <body style="background-image:url({% static 'images/6.png' %});background-repeat:no-repeat;">
+ {% if form.errors %}
+        <p>Your username and password didn't match. Please try again.</p>
+    {% endif %}
+<header>
+    <!-- Header top area start -->
+  
+    <!-- Header area start -->
+  <div class="header-area">
+      <div class="container"> 
+        <!-- Site logo Start --> 
+        <div class="logo">
+          <a href="index.html" title="W-shipping"><img src="{% static '/newtemplate/assets/images/logo.png' %}" alt="W-shipping"/></a>
+        </div>
+        <!-- Site logo end -->
+        <div class="mobile-menu-wrapper"></div>
+        <!-- Search Start -->
+        <div class="dropdown header-search-bar">
+          <form action="index.html">
+            <span class="" data-toggle="dropdown"><i class="fa fa-search" aria-hidden="true"></i></span>
+            <input type="search" placeholder="keywords.." class="dropdown-menu search-box">
+          </form>
+        </div>
+        <!-- Search End -->
+        
+        <!-- Main menu start -->
+        <nav class="mainmenu">
+          <ul id="navigation">
+            <!--  <li class="nav-active"><a href="#">Home</a>
+               
+             </li> -->
+              {% if user.is_authenticated %}
+             <li ><a href="/dashboard">Dashboard</a>
+               
+             </li>
+             <li ><a href="/logout">Logout</a>
+               
+             </li>
+             <!-- <li ><a href="#">Tracking</a>
+                
+             </li>
+             <li ><a href="#">Blog</a> -->
+               <!--  <ul>
+                   <li ><a href="blog-page">Blog left sidebar</a></li>
+                   <li ><a href="blog-another-page">Blog right sidebar</a></li>
+                   <li ><a href="single-blog">Single Blog</a></li>
+                </ul> -->
+             <!-- </li> -->
+             <!-- <li ><a href="#">pages</a> -->
+                <!-- <ul>
+                   <li ><a href="about">About Us</a></li>
+                   <li ><a href="media">Media &amp; Publications</a></li>
+                   <li ><a href="freight-gallery">Freight Gallery</a></li>
+                   <li ><a href="image-gallery">Image Gallery</a></li>
+                   <li ><a href="typography">Typography</a></li>
+                   <li ><a href="button-accordion">Button &amp; Accordion</a></li>
+                   <li ><a href="community">Shipping Community</a></li>
+                   <li ><a href="404">Error 404</a></li>
+                   <li ><a href="sitemap">Site Map</a></li>
+                   <li ><a href="coming-soon">Coming Soon</a></li>
+                </ul> -->
+             <!-- </li> -->
+             <!-- <li ><a href="contact">Contact Us</a></li> -->
+             {% else %}
+             <li ><a href="/login">Institution Login/Register</a>
+<li ><a href="/login">Login/Register</a>
+               
+             </li>
+             <!-- <li ><a href="/register">Register</a> -->
+               
+             </li>
+
+              {% endif %}
+          </ul>
+        </nav>
+        <!-- Main menu end -->   
+      </div>
+    </div>
+    <!-- Header area End -->
+  </header>  
+        <!-- Top content -->
+        <div class="top-content">
+            
+           
+                <div class="container">
+                    
+                    
+                    <div class="row">
+                        
+                        {% if msg %}
+<script type="text/javascript">
+  alert("{{ msg }}");
+</script>
+{% endif %}
+                        
+                        <div class="col-sm-1 middle-border"></div>
+                        <div class="col-sm-3"></div>
+                            
+                        
+                        <div class="col-sm-5">
+                            
+                            <div class="form-box">
+                                <div class="form-top">
+                                    <div class="form-top-left">
+                                        <h3>Sign up now</h3>
+                                        <p>Fill in the form below to get instant access:</p>
+                                    </div>
+                                    <div class="form-top-right">
+                                        <i class="fa fa-pencil"></i>
+                                    </div>
+                                </div>
+                                <div class="form-bottom">
+                                    <form role="form" action="" method="post" class="registration-form">
+                                         {% csrf_token %}
+                                         {{ form.non_field_errors }}
+                                        <div class="form-group">
+                                            <label class="sr-only" for="username">Username</label>
+                                            <input type="text" name="username" placeholder="Username" class="form-first-name form-control" id="form-first-name">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                             <label class="sr-only" for="email">Email</label>
+                                            <input type="text" name="email" placeholder="Email..." class="form-email form-control" id="form-email">
+                                        </div>
+                                       
+                                        <div class="form-group">
+                                              <label class="sr-only" for="password1">Password</label>
+                                            <input type="password" name="password1" placeholder="Password..." class="form-password form-control" id="form-password">
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="sr-only" for="password2">Password</label>
+                                            <input type="password" name="password2" placeholder="Re-type Password..." class="form-password form-control" id="form-password">
+                                        </div>
+                                        <script src='https://www.google.com/recaptcha/api.js'></script>
+    <div class="g-recaptcha" data-sitekey="6LfcXJIUAAAAAAz2UpshrI9A7LBghD16pGXmcwTM"></div>
+    
+                                        <button type="submit" name = "insregisterbutton"class="btn">Sign me up!</button>  
+                                        <br>
+                                        <a href="/login" style="color: white;">Already Registered?</a><br>
+                                         
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+            
+        
+
+        <!-- Footer -->
+      
+
+        <!-- Javascript -->
+        <script src="{% static 'login/assets/js/jquery-1.11.1.min.js' %}"></script>
+        <script src="{% static 'login/assets/bootstrap/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'login/assets/js/jquery.backstretch.min.js' %}"></script>
+        <script src="{% static 'login/assets/js/scripts.js' %}"></script>
+        
+        <!--[if lt IE 10]>
+            <script src="login/assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+</html>

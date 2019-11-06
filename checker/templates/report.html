@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Report</title>
+<style>
+div{
+ max-width:100%;
+ word-wrap: break-word;
+ padding: 1rem;
+  font-size: 140%;
+ }
+ span { 
+  background-color: yellow;
+  color: black;
+}
+
+
+
+html, body {
+    max-width: 100%;
+}
+p {
+  word-wrap: break-word;
+}
+body, input {
+  margin: 5;
+  font: .9em Verdana, 'Lucida Grande', Geneva, Lucida, sans-serif;
+  }
+</style>
+</head>
+ <body>
+<div>
+  {% for i in text %}
+  {% if i.0 == '0'%}
+	   <span>{{ i }} </span>
+    {% else %}
+      {{i}}
+     {% endif %}
+    {% endfor%}
+</div>
+</body>
+</html>
+

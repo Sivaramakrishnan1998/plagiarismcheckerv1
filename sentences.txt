@@ -1,0 +1,427 @@
+ International Research Journal of Engineering and Technology (IRJET) e
+-
+ISSN: 2395 -
+0056 Volume: 03 Issue: 03 | March
+-
+201
+6 w
+w
+w.irjet.net p
+-
+ISSN: 2395
+-
+0072 © 20
+1
+6
+, I
+RJET | Impact Factor value: 4.45 | ISO 9001:2008 Certified Journal | Page 1855 Implementation Of Load Sharing Using Swarm Robotics B. Ashokkumar
+1
+, M. Danny Frazer
+2
+, R. Imtiaz
+3 1
+-
+2
+UG Student
+s
+, Department of Electronics and Communication Engineering, Sri Manakula Vinayagar Engineering College, Madagadipet, Puducherry
+-
+605 107, India 3
+Assist
+ant Professor, Department of Electronics and Communication Engineering, Sri Manakula Vinayagar Engineering College
+, Madagadipet, Puducherry
+-
+605 107
+, India. ---------------------------------------------------------------
+***
+----------------------------
+------------------------------- Abstract - The present era, where technology is mak
+ing its way to the zenith, there is no requirement for human to do every small aspect that helps him support this survival. There is no requirement for humans the lift heavy loads and to meet up their consequences such as backbone injuries etc..,. It is these small functionalities that can be done by the e
+x
+tra
+-
+terrestrials namely Robots. Swarm Robots is a as a group. We have four robots in which there is a master and three other robots. The robots are generally classified into two namely i) Explorer Robots and ii) Carrier Robots. The explorer robots first traverse through the entire path from the source to the destination. They send the information about the terrain to the carrier robots and they act accordingly. Thus the slave works according to the commands of the master. They are designed in such a way to undergo location even on rough terrains. Thus the tasks get accomplished easily in a much more effective way
+. Key Words Swarm Robots, E
+xplorer Robots, Carrier Robots, Master Robots, Slave Robots, Rough Terrains. 1. INTRODUCTION The life of every human has changed drastically over a decade. In the current scenario it is not possible for a human to do petty works like auto
+-
+m
+obilizing a material from one place to another or from source to destination [1]
+. In places like industries where lifting heavy loads is mandatory, there is no necessity that these locomotion activities have to carried by humans. In such cases our robots can come i
+n handy
+. The main aim of our paper is to put the human at his ease by carrying out the work of locomotion. This apart from reducing the burden of human, it also reduces the threat post by a human of handling of any particular object [9]
+. So this increases the security along with reducing the burden. Fig
+-
+1
+: Group of Robots Our paper puts forth its focus on the fact that we imply two kinds of robots. The Robot of first kind is Explorer Robot, which mainly focus the activities of a leader. The second kind of Robot is the carrier Robot, which follows the commands of the Explorer Robot [1] [9]
+. In other terms an Explorer Robot can be called as a Master and the Carrier Robot can be called as Slave. Hence the Swarm Ro
+bots work on Master Slave Concept like the colony of an ant or the bees in a beehive. This makes for the Swarm Intelligen
+ce [3]
+. These Swarm Robots have the characteristics of Sturdiness, scalability, effectiveness in operation, fault tolerance, adaptabili
+ty to the terrain etc.
+[4]..,. Apart from load sharing they are designed for other applications like firefighting, agriculture and also data International Research Journal of Engineering and Technology (IRJET) e
+-
+ISSN: 2395 -
+0056 Volume: 03 Issue: 03 | March
+-
+201
+6 w
+w
+w.irjet.net p
+-
+ISSN: 2395
+-
+0072 © 20
+1
+6
+, I
+RJET | Impact Factor value: 4.45 | ISO 9001:2008 Certified Journal | Page 1856 sharing. It prevents over
+-
+exploitation of resources. Apart from load sharing they are designed for other applications like firefighting, agriculture and also data sharing
+. 2. BIOLOGICAL BASIS The word Swarm as told before symbolizes the activity to work as group. In a biological outlook the concept of swarm was derived from the formic [20]
+. The formic generally represents the ants. A group of ants are called Swarm [23]
+. From the lowest point in the taxonomy of classification, every organism both unicellular and mu
+lti
+-
+cellular works in groups. So this is the main origin for the concept of swarm robotics. These ants work as a group mainly to gather food and also protect themselves from the predators [1]
+. We generally know that ants all work under a common captain who is called Queen Ant [17] [14]
+. The queen ant is the one that commands all other worker ants. Fig
+-
+2
+: Swarm of Ants The absence of the queen ant would halt the work of all the worker ants [1] [7]
+. So it is right to conclude that the worker ants are inactive with the q
+ueen ant. They would have a mayday without the queen; these worker ants have no thinking capability [21] [16]
+. So a Queen is required to keep them active. Fig
+-
+3
+: Swarm of Bees without the command of the queen bee [18] [19]
+. So like an ant colony a beehive has the necessity to have a queen. We use this concept of Swarm in ants and the swarm of bees [15] as the main flow on the backdrop. Fig
+-
+4
+: Swarm of Robots 3. THE SWARM CONCEPT 3.1 Pioneering of the Swarm Robots The concept of Swarm Robots will lend a great helping hand in the future, if not in the near future at least in the days to proceed. So this has its own advantages. Here we have four robots where there will be a master and three slaves [24] [25]
+. The work of the slave is to accomplish the wishes of the master. So we have all four robots work for the fulfillment of a task and hence the task gets completed International Research Journal of Engineering and Technology (IRJET) e
+-
+ISSN: 2395 -
+0056 Volume: 03 Issue: 03 | March
+-
+201
+6 w
+w
+w.irjet.net p
+-
+ISSN: 2395
+-
+0072 © 20
+1
+6
+, I
+RJET | Impact Factor value: 4.45 | ISO 9001:2008 Certified Journal | Page 1857 in time without the use of surplus amount of resources. This is the key asset for the development of Swarm Robots. The next thing we come to know is that most robots are Omni
+-
+directional (i..e..,) they have the ability to move in all directions. This is of a major advantage because they have the ability to access remote location which is mainly conquered by their tolerability to any climatic changes and can enc
+ounter any wear and tear [26]
+. This is a technique that also reduces the time as there are various robots searching in various locations the span keeps on increasing. 3.2 The concept of master and slave The block diagram of Swarm robotics in load sharing is picturized in the following block diagram where we have Raspberry Pi 2 which is the core and the brain of the concept. It is overlooked over Atmel [5] because of its processing speed i..e.., it has the ability to operate more instructions at a time simu
+ltaneously. It is also attached with cameras and hence makes the concept of image processing possible. The ZigBee module is just used as a means of communication. Fig
+-
+5
+: Block Diagram of Master and Slave 3.3 Alignment of Multiple self
+-
+governing robots As discussed above these robots have the ability to act on humans for its operation [22]
+. The main focus of having this is to minimize the extravagance in the resources [8] being used and to re
+duce all these [22]. This is a valid reason for the concept of Swarm Robots as this focuses the main concept of this paper. Fig
+-
+6
+: Essential Parameters The Swarm Robots are generally said to follow line of Sight means of communication. This mainly helps in the process to a greater extent. Fig
+-
+7
+: Swarm Structure for Communication International Research Journal of Engineering and Technology (IRJET) e
+-
+ISSN: 2395 -
+0056 Volume: 03 Issue: 03 | March
+-
+201
+6 w
+w
+w.irjet.net p
+-
+ISSN: 2395
+-
+0072 © 20
+1
+6
+, I
+RJET | Impact Factor value: 4.45 | ISO 9001:2008 Certified Journal | Page 1858 3.4 The phases of Transportation There are four trivial phases of transformation our swarm Concept. In this concept we have the Master robot going in search of the designation and then giving commands for the slave robots about the location of the task for accomplishment. Then the slave r
+obots follow the commands of the master and act accordingly. Fig
+-
+8
+: Phases of Transportation From the above it is evident that there are numerous robots, but here we are taking into consideration only four robots. Out of these four as mentioned above only one will act as a master and the remaining will all act as slaves. Thus the master slave concept is also experimented. We have four phases of the load being carried from source to destination. In Phase (
+I) we have the diagrammatic representat
+ion of the object at the source. We also have numerous robots surrounding the object. In Phase (II) the diagrammatic representation depicts numerous explorer robots that lead to the preferred destination. It also indicates the carrier robots are about to carry the object to its destination. In Phase (III) illustrates a path has been determined by the explorer robots and the carrier robots follow this path and lead to the destination along with the object to be carried. The explorer robot gives ev
+er obstacle in its path to its destination and hence the object is moved from one end to an
+other with ease. In case of any hurdle in the path the explorer robots instructs the carrier robots in such a way that its path gets alternated and they are driven t
+o follow a new path. In Phase (IV) we have the object being carried by the carrier robots from its source to its destination through all the hardships. 3.5 Communication of the S
+warm In general the word swarm means working as a group. In this we visualize the swarm robots that have to work as a group and for accomplishing this they are supposed to work as a group. In order to work in a group these robots must have intercommunication [6] among them. To accomplish this we use ZigBee module as the communication device between them [26]
+. In the present era with the development in technology the zigbee has developed [12] to greater heights in the field of c
+ommunication and is looked upon [13] over other means of communication
+. Fig
+-
+9
+: Zig
+B
+ee Module The use of ZigBee reduces the amount of space the module occupies on the device and is also easily accessible. 4. PATTERN FORMATION There are two types of pattern formation in Swarm robotics which include Strip formation and chain formation. Based on the necessity anyone can be implemented. The patterns include i) Chain formation ii) Strip formation. International Research Journal of Engineering and Technology (IRJET) e
+-
+ISSN: 2395 -
+0056 Volume: 03 Issue: 03 | March
+-
+201
+6 w
+w
+w.irjet.net p
+-
+ISSN: 2395
+-
+0072 © 20
+1
+6
+, I
+RJET | Impact Factor value: 4.45 | ISO 9001:2008 Certified Journal | Page 1859 4.1 Chain Formation In chain formati
+on the load is carried by a c
+h
+a
+in of robots [1]
+. This is mainly followed when the dimension of the load is smaller by length (
+i.e.
+.,) they are carried by virtue of their breath [11]
+. Fig
+-
+10
+: Chain Formation It sometimes accounts for improper utilization of resources because the robot in some cases in the necessity to accomplish the given task even before the stipulated time speeds up the wok process by involving an additional robot [27] [10]
+. It can be reduced to the maximum extent, but when there arises a necessity to complete the given task well before this can come in handy [2]
+. 4.2 Strip F
+ormation Strip formation is generally applied in cases where the swarm undergoes a necessity to push a load which is dimensionally longer in its length than it breath [11]
+. The strip of robots help very much in the concept of load sharing because the weight of the load is calculated and then the load is being pushed by the robots [28]
+. So strip formation is more suitable because it accounts for proper utilization of resources [1][10]. As it is better than its predecessor it is more formidable and is usually preferred [2]. Fig
+-
+11
+: Strip Formation 5. TOPOLOGICAL FORAMTION A topology has to be made on how the communication between the robots are going to happen between the master robot and the slave robots and also the communication between the slave robots. This type of topology is called Mesh Topology [29]
+. So each robot can act as its own node. The main advantage is that there is no requirement for a common node. So any node can communicate with any other node in the form of peer to peer communication. The main outcome of a mesh topology is that data ca
+m
+e be transmitte
+d simultaneously allows communication even during traffic [29]
+. The modification in this topology is done without disrupting the surrounding nodes. Even if there is a failure in component an alternate parent exists [29]
+. Hence the communicati
+on is not affected even if a particular robot is affected. Fig
+-
+12
+: Topological Representation International Research Journal of Engineering and Technology (IRJET) e
+-
+ISSN: 2395 -
+0056 Volume: 03 Issue: 03 | March
+-
+201
+6 w
+w
+w.irjet.net p
+-
+ISSN: 2395
+-
+0072 © 20
+1
+6
+, I
+RJET | Impact Factor value: 4.45 | ISO 9001:2008 Certified Journal | Page 1860 6. OBJECT RECOGNITION Open CV refers to the process to doing matrix calculation over an image. It is an image processing library created by Intel. It has diverged number of versions. It is available in various languages which include C, C++ and even the very recently introduced Python. Object detection which is accomplished by Open CV has the technique called Surf. The premature version of surf is called s
+hift [30]
+. They form the basics of image detection. The main drawback of SIFT is that it is very slow while processing the output. SURF has an upper hand because it has a very high speed [32]
+. It approximates the LOG with the box filter. Fig
+-
+13
+: SURF based detection Another important advancement is the use of Laplacian to find the match and mismatch concept. It distinguishes base
+d on the colour [30] [33]
+. The sign of Laplacian distinguishes the bright blobs in a dark backgrounds and vice versa. It has lot of advantages than SIFT in the form that it is three times faster in performance [31]. SURF is good handling images with blurring and rotation. Fig
+-
+14
+: Match and Mismatch in SURF 7. IMPLEMENTATION OF THE ROBOT The implementation part contains four robots wherein the robots are implemented with a Raspberry Pi2 and an Arduino
+. The master contains a Raspberry Pi2 which forms the brain of the robot. The slave contains Arduinos which form the core of the slave robots
+. The means of communication is by ZigBee which forms the means of interaction. The ZigBee module is implemented in each and every robot and this forms the communication process. Fig
+-
+15
+: Robot Model The motor is fixed to the wheels and this enables the locomotion of the swarm. We know that the swarm concept generally works by the master a slave and this enables the type of locomotion. International Research Journal of Engineering and Technology (IRJET) e
+-
+ISSN: 2395 -
+0056 Volume: 03 Issue: 03 | March
+-
+201
+6 w
+w
+w.irjet.net p
+-
+ISSN: 2395
+-
+0072 © 20
+1
+6
+, I
+RJET | Impact Factor value: 4.45 | ISO 9001:2008 Certified Journal | Page 1861 8. ADVANTAGES OF THE PROPOSED WORK The main advantage of the proposed work is that there the speed of data [6] and instruction transfer gets increased and the accounts for the data transfer at a faster rate [26]. The next thing is pattern formation i..e.., in the previous models only patterns were formed but this model helps us to us the pattern formed and makes t
+he sharing and pushing of loads possible
+. Fi
+g
+-
+16
+: Raspberry Pi2 9. CONCLUSION Thus we conclude by saying that our robotic model removes the extravagance in the usage of resources and hence saves the money to agreater extent. It ultimately enhances the life time of the robots. Such a thing is achieved because the robot is not prawn to less wear and tear
+. REFERENCES [1] Yogeswaran M. and Ponnambalam S. G. (2010). Swarm Robotics: An Extensive Research Review, Advanced Knowledge Application in Practice, Igor Fuerstner (Ed.), ISBN: 978
+-
+953
+-
+307
+-
+141
+-
+1,
+InTech, Available from: http://www.intechopen.com/books/advanced
+-
+knowledge
+-
+application
+-
+in
+-
+practice/swarm
+-
+robotics
+-
+an
+-
+extensiveresearch
+-
+review. [2] M. Yim, Y. Zhang, K. Roufas, D. Duff, and C. Eldershaw. Connecting and disconnecting for chain self
+-
+reconfiguration with PolyBot. IE
+EE/ASME Trans. Mechatron
+., 7(4):442 451, 2002. [3] Yogeswaran M. and Ponnambalam S. G in 2009 World Congress on Nature & Biologically Inspired Computing (NaBIC 2009) Swarm Robotics: An Extensive ResearchIn Swarm Robotics School of Engineering,Monash Unive
+rsity, Sunway campus,46150 Petaling Jaya, Selangor, Malaysia978
+-
+1
+-
+4244
+-
+5612
+-
+3/09/$26.00
+_
+c
+IEEE, 2009. [4] G
+. Beni and J. Wang. Swarm intelligence in cellular robotic systems. In Proc. NATO Advanced
+- Workshop on Roboticsand Biological Systems, I1 Ciocco, Tuscany, Italy, 1989. [5] Open
+-
+hardware e
+-
+puck Linux extension board for experimental swarm robotics research Wenguo Liu , Alan F.T. Winfield. Bristol Robotics Laboratory, University of the West of England, Bristol BS16 1QY, UK. [6] Autonomous self
+-
+asse
+mbly in Swarm
+-
+Bots.IEEE. Trans Robot ARTICLE in
+IEEE TRANSACTIONS ON ROBOTICS · JANUARY 2007
+. Impact Factor: 2.43 · DOI: 10.1109/TRO.2006.882919 · Source: IEEE Xplore. [7] A Survey of Robotic Swarms. Johnny Holmström and
+Daniel Romero, Master Program in Robotics, 300hp, Mälardalen University, Västerås Sweden in IRCSE in IEEE, 2010. [8] Proceedings of the 1993
+IEEWRSJ International Conference on Intelligent Robots and Systems Yokohama, Japan
+July 26
+-
+30, 1993
+. A Taxonomy for Swarm Robots by G. Dudek, Research Centre for Intelligent Machines, McGill University, Montrkal, Qukbec, Canada. M. Jenkinj E. Milios Department of Computer Science, York University, North York, Ontario, Canada.D. Wilkest, Department of Comput
+er Science, University of Toronto, Toronto, Ontario, Canada. Proceedings of the IEEE International Conference on Robotics and Automation, vol. 3, 2
+-
+6 May1993, pp. 582 - 587. [10] M. Yim, K. Roufas, D. Duff, Y. Zhang, C. Eldershaw, and S. B.Homans. Modular reconfigurable robots in space applications. Auton. Robots, 14(2
+-
+3):225 237
+, 2003. [11] M. Yim, Y. Zhang, and D. Duff. Modular robots. IEEE Spectr., 39(2):30 34
+, 2002. [12]F. Mo
+ndada, L. M. Gambardella, D. Floreano, S. Nolfi, J.
+- -
+bots: Physical interac
+-
+tions in collective robotics Robot. Au
+-
+tomat. Mag., vol. 12, no. 2, pp. 21 28
+, June 2005. International Research Journal of Engineering and Technology (IRJET) e
+-
+ISSN: 2395 -
+0056 Volume: 03 Issue: 03 | March
+-
+201
+6 w
+w
+w.irjet.net p
+-
+ISSN: 2395
+-
+0072 © 20
+1
+6
+, I
+RJET | Impact Factor value: 4.45 | ISO 9001:2008 Certified Journal | Page 1862 [13] J. Kennedy and R. C. Morgan Kaufmann Publisher, 2001 [14] A Survey of Robotic Swarms. Johnny Holmström and
+Daniel Romero, Master Program in Robotics, 300hp, Mälardalen University, Västerås Sweden in IRCSE in IEEE, 2010. [15] R. Groß, M. Bonani
+, F. Mondada, M. Dorigo, -
+Assembly in Swarm
+- IEEE transactions on robotics, vol. 22, no. 6, pp.1115
+-
+1130
+, December 2006. -
+BOT: An experiment in swarm Symp
+osium. IEEE Com
+-
+puter Society Press, Los Alamitos, CA, pp. 192 200, June 2005. Object by Six Pre
+-
+attached Robots Inte
+-
+racting via Physical Proceedings of the 2006 IEEE International Conferenc
+e on Robot
+-
+ics and Automation, Orlando, FL, pp. 1317 1323, May 2006. [18] R. Groß, E. Tuci, M. Dorigo, M. Bonani, F. Mondada, -
+bots that Self
+- Proceedings of the 2006 IEEE International Conference on Robot
+-
+ics and Automation, Orlando, FL, pp. 2558 2564
+, May 2006. pp. 255
+-
+268. [20] Thomas H. Labella, Marco Dorigo and Jean
+-
+Louis of Labor in a Group of Robots on Autonomous and Adaptive Systems, vol. 1, no. 1, September 2006, pp. 4
+-
+25. -
+Based , in AAMAS'04, New York, USA. : ACM, July 19
+-
+23, 2004, pp. 36
+-
+43. [22] Stability of Swarm Robot Based on Local Forces of Local Swarms Hiroshi Hashimoto, Advanced Institute of Industrial Technology, Japan, hashimotohiroshi@memiee. Or.jpShinichiAso, Syo Yok
+ota, Akinori Sasaki, Yasuhiro Ohyama, Tokyo University of Technology, Japan and Hiroyuki Kobayashi, Osaka Institute of Technology, Japan. [23] Overview of Swarm Intelligence Yan
+-
+fei Zhu a
+nd Xiong
+-
+min Tang
+, Faculty of Automation Guangdong University of Technology, Guangzhou, China at 2010 International Conference on Computer Application and System Modeling (ICCASM 2010
+)
+. [24] S.Kazadi, "On the Development of a Swarm Engineering Methodology," Systems, Man and Cybernetics, 2005 IEE
+E International Conference on , vol.2, no., pp.1423
+-
+1428, Oct. 2005. [25] S.Kazadi, A. Wen, M. Volodarsky, "Reliable Swarm Design,"Control and Automation, 2009. MED '09. 17th Mediterranean Conference on , vol., no., pp.1301
+-
+1306, 24
+-
+26 June 2009. [26] An improved low power wireless sensor network based on ZigBee for agricultural applications K. TSIAKMAKIS, N. MALLIOS, N. CHARALAMPIDIS, M. SPASOS Department of Electronics Alexander Technological Educational Institute (ATEI) Sindos, Thessaloniki GREECE ktsi
+ak@physics.auth.gr [27] B. Werger and M. Mataric, \
+Robotic food chains: Externalization of state and program for minimal
+-
+agent for
+-
+aging," in Proce
+edings of the 4th International Conference on Simulation of Adaptive Behavior (SAB96), MA,1996, pp. 625{634, MIT Press/Bradford Books. [28] T.D. Fitzgerald, The Tent Caterpillars, Cornell University Press, Ithaca, NY, 1995. [29] A Comparative and Analysis Study of Data Flow in Different Computer Network Topologies Sankari M Assistant Professor, Dept of CSE, KG Reddy College of Engg. &Technology, Hyderabad, India [30] Speeded
+-
+UpRobustFeatures(SURF) Herbert Baya , Andreas Essa , Tinne Tuytelaarsb , and Luc Van Goola,b aETH Zurich, BIWI Sternwartstrasse 7 CH
+-
+8092 Zurich Switzerland bK. U. Leuven, ESAT
+-
+PSI Kasteelpark Arenberg 10 B
+-
+3001 Leuven Belgium [31] K. Mikolajczyk and C. Schmid. A performance evaluation of local descriptors. In CVPR, volume 2, pages 257 263
+, June 2003. [32] K. Mikolajczyk and C. Schmid. A performance evaluation of local descriptor
+s. PAMI, 27(10):1615 1630, 2005. [33] K. Mikolajczyk, T. Tuytelaars, C. Schmid, A. Zisserman, y, T. Kadir, and L. Van Gool. A IJCV, 65(1/2):43 72, 2005. 

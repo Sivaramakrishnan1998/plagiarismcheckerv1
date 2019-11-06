@@ -1,0 +1,1398 @@
+          
+International Research Journal of Engineering and Technology
+ 
+(IRJET)
+ 
+ 
+ 
+   
+e
+-
+ISSN: 2395 
+-
+0056
+ 
+               
+Volume: 04 Issue: 03 | Mar 
+-
+201
+7
+            
+    
+    
+ 
+w
+w
+w.irjet.net
+     
+     
+ 
+ 
+          
+  
+                                        
+p
+-
+ISSN: 2395
+-
+0072
+ 
+ 
+©
+ 
+20
+1
+7
+,
+ 
+I
+RJET       | 
+     
+ 
+Impact Factor value: 
+5
+.
+181
+      
+ 
+|
+      
+ 
+ISO 9001:2008 Certified Journal 
+    
+ 
+ 
+|  
+   
+Page 
+2770
+ 
+ 
+ 
+MODELING & DESIGN OF DTMF TECHNIQUE BASED AUTOMATIC MOBILE SWITCHING & 
+CONTROL OF ANY MACHINERY
+ 
+ 
+SHARAD CHANDRA RAJPOOT 
+1
+, PRASHANT SINGH RAJPOOT 
+2
+, SANJAY KUMAR SINGHAI 
+3
+, KRISHNA KUMAR SAXENA
+ 
+4
+ 
+ 
+1
+ 
+Assistant professor (EE) G.E.C. Jagdalpur , Bastar, Chh
+attisgarh, 
+ 
+2
+ 
+Assistant professor (EE)  L.C.I.T., Bilaspur, Chhattisgarh, India, 
+ 
+3
+ 
+Professor (EE) G.E.C. Bilaspur, Chhattisgarh, India, 
+ 
+4 
+Associate professor(EE) G.E.C. Bilaspur, Chhattisgarh, India 
+ 
+------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+Abstract
+-
+ 
+The main scope of project is to send commands 
+from one cell phone to be received by another cell phone 
+mounted on the kit to receive the 
+DTMF (Dual Tone Multi 
+Frequency) mode commands which are then decoded. The 
+corresponding codes are then fed to a microcontroller, 
+programmed to recognize those codes to operate a relay as 
+
+device will
+ 
+operated.
+ 
+                     
+The aim of the proposed system is to develop a 
+cost effective solution that will provide controlling of devices 
+such as industrial devices, home appliances remotely and 
+enable home security against intrusion in the absence o
+f 
+homeowner. The system provides availability due to 
+development of a low cost system. The home appliances 
+control system with an affordable cost was thought to be 
+built that should be mobile providing remote access to the 
+appliances and allowing home secu
+rity. 
+ 
+ 
+Index Terms
+-
+ 
+DTMF (Dual Tone Multi Frequency), control 
+system, home security, ICs.
+ 
+1.   
+INTRODUCTION
+1
+ 
+1.1   OVERVIEW
+ 
+In this system, we are going to develop a cellular phone 
+based home/office appliance. This system is designed for 
+controlling arbi
+trary devices, it includes a cell phone (not 
+included with the system kit, end user has to connect his/her 
+cell phone to the system) which is connect to the system via 
+head set. To active the cellular phone unit on the system a 
+call is to be made and as th
+e call is answered , in response 
+the user would enter a two/three digit password to access 
+the system to control devices. As the caller press the specific 
+password , it results in turning 
+on or  off
+  
+specific devices. 
+The  device switching .[2]
+ 
+ 
+2. METHODOLOGY
+ 
+2.1 Working Principle
+ 
+Power supply of 230 volt is fed in to the transformer which 
+step down that voltage in to 12volt supply. A full wave 
+                                        
+                  
+ 
+ 
+bridge rectifier is used to convert ac voltage in to dc value   , 
+then this 
+ 
+12 volt dc value fed in to voltage re
+gulator which operates at 
+12volt dc which converts unregulated dc value in to 
+regulated dc value. Voltage regulator is also used here to 
+make good performance of transistors and ics what here 
+used. Now a cell phone is connect with the circuit, when 
+caller 
+make call on that cell phone ) ICs to generate DTMF 
+corresponding to a number or code in the number pad and to 
+detect the same number or code from its corresponding 
+DTMF. In detail, a DTMF generator generates two 
+frequencies corresponding to a number or co
+de in the 
+number pad which will be transmitted through the 
+communication networks, constituting the transmitter 
+section which is simply equivalent to a mobile set. In the 
+receiver part, the DTMF detector IC, for example IC MT 8870 
+detects the number or cod
+e represented by DTMF back, 
+through the inspection of the two transmitted frequencies. 
+Now that  frequency generated is fed in to microcontroller 
+then transmit to relays  after receiving necessary operating 
+voltage  relay starts switching on and off proces
+s of devices.
+ 
+ 
+2.2    EMBEDDED SYSTEM
+ 
+2.2.1  Introduction
+ 
+An Embedded System is a combination of computer 
+hardware and software, and perhaps additional mechanical 
+or other parts, designed to perform a specific function. An 
+embedded system is a microcontrol
+ler
+-
+based, software 
+driven, reliable, real
+-
+time control system, autonomous, or 
+human or network interactive, operating on diverse physical 
+variables and in diverse environments and sold into a 
+competitive and cost conscious market.[5] 
+ 
+          
+International Research Journal of Engineering and Technology
+ 
+(IRJET)
+ 
+ 
+ 
+   
+e
+-
+ISSN: 2395 
+-
+0056
+ 
+               
+Volume: 04 Issue: 03 | Mar 
+-
+201
+7
+            
+    
+    
+ 
+w
+w
+w.irjet.net
+     
+     
+ 
+ 
+          
+  
+                                        
+p
+-
+ISSN: 2395
+-
+0072
+ 
+ 
+©
+ 
+20
+1
+7
+,
+ 
+I
+RJET       | 
+     
+ 
+Impact Factor value: 
+5
+.
+181
+      
+ 
+|
+      
+ 
+ISO 9001:2008 Certified Journal 
+    
+ 
+ 
+|  
+   
+Page 
+2771
+ 
+ 
+      
+ 
+Figure
+-
+Worki
+ng Diagram
+ 
+2.3  Characteristics of Embedded System
+ 
+
+ 
+An embedded system is any computer system 
+hidden inside a product other than a computer.
+ 
+
+ 
+They will encounter a number of difficulties when 
+writing embedded system software in addition to 
+those we encounter
+ 
+when we write applications
+ 
+
+ 
+Power consumption 
+
+ 
+Portable systems must run on 
+battery power, and the software in these systems 
+must conserve power
+ 
+2.4  Classification
+ 
+
+ 
+Real Time Systems.
+ 
+
+ 
+RTS is one which has to respond to events within a 
+specified deadline.
+ 
+
+ 
+A right answer after the dead line is a wrong 
+answer.
+ 
+
+ 
+ 
+RTS CLASSIFICATION
+ 
+
+ 
+Hard Real Time Systems
+ 
+
+ 
+Soft Real Time System
+ 
+
+ 
+ 
+HARD REAL TIME SYSTEM
+ 
+
+ 
+"Hard" real
+-
+time systems have very narrow 
+response time.
+ 
+
+ 
+Example: Nuclear power system, Cardiac 
+pacemaker.
+ 
+SOFT RE
+AL TIME SYSTEM
+ 
+
+ 
+"Soft" real
+-
+time systems have reduced constrains on 
+"lateness" but still must  operate very quickly and 
+repeatable.
+ 
+Example: Railway reservation system 
+
+ 
+takes a few 
+extra seconds the data remains valid.
+ 
+ 
+User interface
+ 
+Embedded systems rang
+e from no user interface at 
+all dedicated only to one task to complex
+ 
+graphical user 
+interfaces
+ 
+that resemble modern computer d
+esktop 
+operating systems. Simple embedded devices 
+use
+ 
+buttons
+,
+ 
+LEDs
+, graphic or character
+ 
+LCDs
+ 
+(for example 
+popular
+ 
+HD44780 LCD
+) with a simple
+ 
+menu system
+.[6]
+ 
+2.5  Applications
+ 
+
+ 
+Mastering the complexity of applications.
+ 
+
+ 
+Reduction of product design time.
+ 
+
+ 
+Real time processing of ever increasing amounts of 
+data.
+ 
+
+ 
+Energy production control
+ 
+
+ 
+Telephone switches
+ 
+
+ 
+Rocket & satellite control.
+ 
+
+ 
+Intellige
+nt, autonomous sensors.
+ 
+
+ 
+Air Traffic Control
+ 
+ 
+3. MICROCONTROLLER
+ 
+3.1 Introduction
+ 
+The AT89S52 is a low
+-
+power, high
+-
+performance CMOS 8
+-
+bit 
+microcontroller with 8K bytes of in
+-
+system programmable 
+
+high
+-
+den
+sity non
+-
+volatile memory technology and is 
+compatible with the industry standard 80C51 instruction set 
+and pin out. The on
+-
+chip Flash allows the program memory 
+to be reprogrammed in
+-
+system or by a conventional non
+-
+volatile memory programmer. By combining a
+ 
+versatile 8
+-
+bit 
+CPU with in
+-
+system programmable Flash on a monolithic 
+chip, the Atmel AT89S52 is a powerful microcontroller 
+which provides a highly
+-
+flexible and cost
+-
+effective solution 
+to many embedded control applications. The AT89S52 
+provides the follow
+ing standard features: 8K bytes of Flash, 
+256 bytes of RAM, 32 I/O lines, Watchdog timer, two data 
+pointers, three 16
+-
+bit timer/counters, a six
+-
+vector two
+-
+level 
+interrupt architecture, a full duplex serial port, on
+-
+chip 
+oscillator, and clock circuitry. [6]
+  
+ 
+          
+International Research Journal of Engineering and Technology
+ 
+(IRJET)
+ 
+ 
+ 
+   
+e
+-
+ISSN: 2395 
+-
+0056
+ 
+               
+Volume: 04 Issue: 03 | Mar 
+-
+201
+7
+            
+    
+    
+ 
+w
+w
+w.irjet.net
+     
+     
+ 
+ 
+          
+  
+                                        
+p
+-
+ISSN: 2395
+-
+0072
+ 
+ 
+©
+ 
+20
+1
+7
+,
+ 
+I
+RJET       | 
+     
+ 
+Impact Factor value: 
+5
+.
+181
+      
+ 
+|
+      
+ 
+ISO 9001:2008 Certified Journal 
+    
+ 
+ 
+|  
+   
+Page 
+2772
+ 
+ 
+ 
+Fig. Architecture diagram of microcontroller
+ 
+ 
+Oscillator Characteristics
+ 
+ 
+XTAL1 and XTAL2 are the input and output, 
+respectively, of an inverting amplifier which can be 
+configured for use as an on
+-
+chip oscillator,. Either a qu
+artz 
+crystal or ceramic resonator may be used. To drive the 
+device from an external clock source, XTAL2 should be left 
+unconnected while XTAL1 is driven.
+ 
+. 
+ 
+ 
+Figure
+-
+ 
+Oscillator Connections
+ 
+4.  HARDWARE DISCRIPTION
+ 
+4.1 Transformer(
+230/12)
+ 
+In this project we use step down transformer, which 
+converts 230/12 V ac, 1A .Three wires are used in output. 
+One Green and yellow wire gives 500mA and another green 
+and yellow wire gives 500mA.so, total output currant is 
+1A.[6]
+ 
+4.2 Full Wave Centr
+al Tap Rectifier
+ 
+For a positive half cycle of the input voltage, the 
+polarities of the secondary voltages are shown in figure. This 
+condition forward biases diode D1 and reverse biases diode 
+D2. 
+The current
+ 
+path is through D1 and the load resistor RL.
+ 
+ 
+ 
+For a negative half cycle of the input voltage, the 
+voltage polarities on the secondary are shown. This 
+condition reverse biases D1 and forward biases D2. The 
+current path is through D2 and RL
+. Because the output 
+current during both the positive and negative portions of the 
+input cycle is in the same direction through the load the 
+          
+International Research Journal of Engineering and Technology
+ 
+(IRJET)
+ 
+ 
+ 
+   
+e
+-
+ISSN: 2395 
+-
+0056
+ 
+               
+Volume: 04 Issue: 03 | Mar 
+-
+201
+7
+            
+    
+    
+ 
+w
+w
+w.irjet.net
+     
+     
+ 
+ 
+          
+  
+                                        
+p
+-
+ISSN: 2395
+-
+0072
+ 
+ 
+©
+ 
+20
+1
+7
+,
+ 
+I
+RJET       | 
+     
+ 
+Impact Factor value: 
+5
+.
+181
+      
+ 
+|
+      
+ 
+ISO 9001:2008 Certified Journal 
+    
+ 
+ 
+|  
+   
+Page 
+2773
+ 
+ 
+output voltage developed across the load resistor is a full 
+wave rectified dc voltage.[5]
+ 
+4.2.3  Wave form and circ
+uit diagram
+ 
+ 
+ 
+Figure
+-
+ 
+output waveform
+ 
+4.3 Voltage Regulator
+ 
+Any electrical or 
+electronic device
+ 
+that maintains the 
+voltage of a 
+p
+ower source
+ 
+within acceptable limits. The 
+voltage regulator
+ 
+is needed to keep voltages within the 
+prescribed range that can be tolerated by the electrical 
+equipment using that voltage.[5]
+ 
+ 
+Fig. voltage regulator
+ 
+4.4  DTMF Decoder
+ 
+4.4.1 Description
+ 
+Dual Tone Multiple Frequency (DTMF) codec is used 
+to encode and decode the key strokes in a telephone. It can 
+also be used to perform a basic data transfer operation. The 
+MT8870D/MT8870D
+-
+1 is a co
+mplete DTMF receiver 
+integrating both the band split filter and digital decoder 
+functions. The filter section uses switched capacitor 
+techniques for high and low group filters; the decoder uses 
+digital counting techniques to detect and decode all 16 DTMF 
+t
+one pairs into a 4
+-
+bit code. External component count is 
+minimized by on chip provision of a differential input 
+amplifier, clock oscillator and latched three
+-
+state bus 
+interface.[3]
+ 
+4.4.2 Working
+ 
+Telephone signaling is based on encoding keypad 
+digits using
+ 
+two sinusoidal of different frequencies, hence 
+the name DTMF. Each digit is represented by a low 
+frequency and a high frequency sinusoid. The frequencies 
+used were recommended by AT&T such that no two 
+frequencies are integral multiples of each other. This
+ 
+facilitates correct decoding even in the presence of non 
+linearity of filters which cause higher harmonics to be 
+present.
+ 
+4.4.3  Diagram
+ 
+ 
+Fig. DTMF generator kit 
+ 
+ 
+                    
+Fig: DTMF generated
+ 
+signal
+ 
+It was also necessary to replicate the generation 
+section of code in order to produce two sine waves. These 
+two waves were then added together, and sent to the analog 
+interface circuit ready for transmission. DTMF, or Dual Tone 
+Multi Frequency, is 
+a method of sending and receiving 
+control information over a communications channel. The 
+reader is probably most familiar with DTMF tones as heard 
+on a modern push
+-
+button telephone. 
+ 
+4.4.4 Features
+ 
+     
+
+ 
+     
+
+ 
+          
+International Research Journal of Engineering and Technology
+ 
+(IRJET)
+ 
+ 
+ 
+   
+e
+-
+ISSN: 2395 
+-
+0056
+ 
+               
+Volume: 04 Issue: 03 | Mar 
+-
+201
+7
+            
+    
+    
+ 
+w
+w
+w.irjet.net
+     
+     
+ 
+ 
+          
+  
+                                        
+p
+-
+ISSN: 2395
+-
+0072
+ 
+ 
+©
+ 
+20
+1
+7
+,
+ 
+I
+RJET       | 
+     
+ 
+Impact Factor value: 
+5
+.
+181
+      
+ 
+|
+      
+ 
+ISO 9001:2008 Certified Journal 
+    
+ 
+ 
+|  
+   
+Page 
+2774
+ 
+ 
+     
+
+ 
+     
+
+ 
+4.5  Inverter IC 7404
+ 
+                            
+ 
+Figure Inverter IC 7404
+ 
+   
+4.5.2  Description
+ 
+Outputs of one gate can be connected to inputs of 
+another within
+ 
+the same chip or to another chip as long as 
+they share the same ground. The figure to the left illustrates 
+a basic circuit showing how to wire inputs and using LEDs to 
+display outputs. 
+ 
+4.6  Diode 1N4007
+ 
+Diodes are used to convert AC into DC these are 
+use
+d as half wave rectifier or full
+ 
+ 
+ 
+wave rectifier. Three points must he kept in mind 
+while using any type of diode. 
+ 
+
+ 
+Maximum forward current capacity 
+ 
+
+ 
+Maximum reverse voltage capacity 
+ 
+
+ 
+Maximum forward voltage capacity 
+ 
+The number and voltage capacity of so
+me of the important 
+diodes available in the market are as follows: Diodes of 
+number IN4001, IN4002, IN4003, IN4004, IN4005, 
+IN4006,forward current capacity of 1 Amp. [6]
+ 
+ 
+Fig. V
+-
+I characteristic of diode [6]
+ 
+4.7  Capacitors
+ 
+ 
+A cap
+acitor or condenser is a passive electronic 
+component consisting of a pair of conductors separated by a 
+dielectric. When a voltage potential difference exists 
+between the conductors, an electric field is present in the 
+dielectric. This field stores energy 
+and produces a 
+mechanical force between the plates. The effect is greatest 
+between wide, flat, parallel, narrowly separated 
+conductors.[7]
+ 
+ 
+ 
+ 
+Figure Electrolytic Capacitor
+ 
+4.8  Resistors
+ 
+ 
+A resistor is a two
+-
+terminal electronic 
+co
+mponent designed to oppose an electric current by 
+producing a voltage drop between its terminals in 
+proportion to the current, that is, in accordance with Ohm's 
+law:
+ 
+                                              
+V
+= 
+IR     [5]
+ 
+ 
+4.9  LED
+ 
+A light
+-
+emitting dio
+de (LED) is a 
+semiconductor
+ 
+light source. LEDs are used as indicator lamps in many 
+devices, and are increasingly used for 
+lighting
+. When a li
+ght
+-
+emitting 
+diode
+ 
+is forward biased (switched on), 
+electrons
+ 
+are 
+able to 
+recombine
+ 
+with 
+holes
+ 
+within the device, releasing 
+energy in the form of 
+photons
+. 
+ 
+
+ 
+ 
+ 
+          
+International Research Journal of Engineering and Technology
+ 
+(IRJET)
+ 
+ 
+ 
+   
+e
+-
+ISSN: 2395 
+-
+0056
+ 
+               
+Volume: 04 Issue: 03 | Mar 
+-
+201
+7
+            
+    
+    
+ 
+w
+w
+w.irjet.net
+     
+     
+ 
+ 
+          
+  
+                                        
+p
+-
+ISSN: 2395
+-
+0072
+ 
+ 
+©
+ 
+20
+1
+7
+,
+ 
+I
+RJET       | 
+     
+ 
+Impact Factor value: 
+5
+.
+181
+      
+ 
+|
+      
+ 
+ISO 9001:2008 Certified Journal 
+    
+ 
+ 
+|  
+   
+Page 
+2775
+ 
+ 
+Electronic Symbol:
+ 
+ 
+Symbol of LED
+ 
+  
+5. APPLICATIONS
+ 
+ 
+1. INDUSTRIAL CONTROL:
+ 
+It is used to control or switch on any automatic process 
+control machinery. Electric grid could be controlled 
+remotely. Automatic production machiner
+y could be 
+controlled even during odd hours with your mobile phone.
+ 
+2.
+ 
+HOME AUTOMATION:
+ 
+To monitor status of home appliances. To control(ON/OFF) 
+the home appliances according to there status when we
+ 
+ 
+are 
+going away from home.
+ 
+3.FARM AUTOMATION:
+ 
+To control 
+& monitor the various irrigation equipments in 
+the farm.
+ 
+ 
+6. ADVANTAGES
+ 
+
+     
+ 
+Eliminates the continuous monitoring of appliances.
+ 
+
+     
+ 
+Commands can be given through remote place, directly 
+to the machine.
+ 
+
+     
+ 
+By further modification security system ca
+n be added.
+ 
+
+     
+ 
+Entire control is password protected.
+ 
+
+     
+ 
+Easy to install & simple in operation.
+ 
+
+     
+ 
+Low cost, high reliability & flexibility.
+ 
+7. CONCLUSION
+ 
+In the advancing world of 21st century there need to 
+be controlling devices in almost all 
+the places viz. home 
+[controlling of various appliances], office [electronic 
+authentication for access to a specific cabin, restricted area 
+etc.], factory [control and instrumentation], public places [ 
+traffic signal control automatic railway crossing sign
+al 
+control etc.] etc. All these controls should be achieved via 
+easily available public level interface like power line, 
+telephone line or through internet. And the medium through 
+which the objective is to be achieved depends on the device 
+to be controlled
+ 
+and the placement of the device. For our 
+project we have decided to use mobile as a medium for 
+controlling devices since we are basically devising a system 
+that will be user friendly, would be used to control the 
+appliances from any corner of the world an
+d will still 
+maintain privacy and restrict access to the unauthorized 
+user.
+ 
+According to the recent trends we can use GSM for 
+controlling the home appliances from anywhere in the 
+world. With the help of GSM we can receive the system 
+information via SMS. Bu
+t compared to DTMF the cost of GSM 
+is very high and hence in our project we are using DTMF.
+ 
+ 
+          
+8.  FUTURE SCOPE
+ 
+       
+
+     
+ 
+Data logging facility can be included.
+ 
+       
+
+      
+ 
+Computer can be interfaced.
+ 
+       
+
+      
+ 
+System reliability can be
+ 
+improved.
+ 
+              
+
+      
+ 
+Wide spread of automation.
+ 
+ 
+9. MODEL STRUCTURE
+ 
+ 
+Figure. Block diagram
+ 
+11. REFERENCES  
+ 
+[1] Sharad Chandra Rajpoot, Prashant Singh Rajpoot and 
+Durga Sharma,
+
+ 
+Power system Stability Improvement using 
+          
+International Research Journal of Engineering and Technology
+ 
+(IRJET)
+ 
+ 
+ 
+   
+e
+-
+ISSN: 2395 
+-
+0056
+ 
+               
+Volume: 04 Issue: 03 | Mar 
+-
+201
+7
+            
+    
+    
+ 
+w
+w
+w.irjet.net
+     
+     
+ 
+ 
+          
+  
+                                        
+p
+-
+ISSN: 2395
+-
+0072
+ 
+ 
+©
+ 
+20
+1
+7
+,
+ 
+I
+RJET       | 
+     
+ 
+Impact Factor value: 
+5
+.
+181
+      
+ 
+|
+      
+ 
+ISO 9001:2008 Certified Journal 
+    
+ 
+ 
+|  
+   
+Page 
+2776
+ 
+ 
+
+,
+Internatio
+nal Journal of Science Engineering 
+and Technology research ISSN 2319
+-
+8885 Vol.03, Issue. 
+11,June
+-
+2014,Pages:2374
+-
+2379.
+ 
+[2] Sharad Chandra Rajpoot, Prashant singh Rajpoot and 
+
+FACTS in Deregulated Power 
+
+ 
+International Journal 
+of Science Engineering and  Technology research ISSN 2319
+-
+8885 Vol.03, Issue.05,April & May
+-
+2014,Pages:0774
+-
+0778.
+ 
+ 
+[3] Sharad Chandra Rajpoot, Prashant Singh Rajpoot and 
+
+,
+ 
+International Journal of Engineering research and 
+TechnologyISSN 2278
+-
+0181 Vol.03, Issue.6, June
+-
+2014.
+ 
+[
+
+
+pp.685
+-
+692
+ 
+   
+[5] Sharad Chandr
+a Rajpoot, Prashant Singh Rajpoot and 
+Durga Sharma,
+
+21
+st
+ 
+century modern technology of reliable 
+billing system by using smart card based energy 
+meter
+
+Technology research,ISSN 2319
+-
+8885 Vol.03,Issue.05,Apr
+il & 
+May
+-
+2014,Pages:0840
+-
+0844.
+ 
+[6] Prashant singh Rajpoot , Sharad Chandra Rajpoot and 
+Durga Sharma,
+
+coupled magnetic resonance
+
+, 
+international Journal of 
+Science Engineering and  Technology research ISSN 2319
+-
+8885 V
+ol.03,.05,April & May
+-
+2014,Pages:0764
+-
+0768.
+ 
+ 
+[7] Sharad Chandra Rajpoot, Prashant Singh Rajpoot and 
+
+
+ 
+International Journal of 
+ScienceEngineering and Technology research ISSN 2319
+-
+888
+5 Vol.03, Issue.11, April June
+-
+2014, Pages: 2351
+-
+2354.
+ 
+ 
+ 

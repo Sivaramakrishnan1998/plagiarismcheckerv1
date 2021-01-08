@@ -65,12 +65,5 @@ python manage.py runserver
 * [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) - Scraping data from web
 * [Nltk](http://www.nltk.org/) - Natural Language Processing
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://github.com/syedsiddhiqq/plagiarismchecker/blob/master/CONTRIBUTORS.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 
-
-## Author
-
-* **Syed Ali**

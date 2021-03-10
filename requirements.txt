@@ -20,7 +20,7 @@ PyPDF2==1.26.0
 python-docx==0.8.10
 pytz==2018.3
 reportlab==3.5.13
-requests==2.18.4
+requests==2.20.0
 simplejson==3.16.0
 six==1.11.0
 urllib3==1.22

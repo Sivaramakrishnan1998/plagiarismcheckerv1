@@ -23,7 +23,7 @@ reportlab==3.5.13
 requests==2.18.4
 simplejson==3.16.0
 six==1.11.0
-urllib3==1.22
+urllib3==1.26.5
 vine==1.2.0
 virtualenv==16.4.3
 webencodings==0.5.1

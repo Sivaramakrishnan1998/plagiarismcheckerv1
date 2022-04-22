@@ -16,7 +16,7 @@ kombu==4.2.0
 lxml==4.6.2
 Pillow==5.4.1
 PyMuPDF==1.14.10
-PyPDF2==1.26.0
+PyPDF2==1.27.5
 python-docx==0.8.10
 pytz==2018.3
 reportlab==3.5.13
